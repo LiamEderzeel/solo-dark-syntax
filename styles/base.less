@@ -22,7 +22,7 @@ atom-text-editor, :host {
 
 		.line-number {
 			&.cursor-line {
-				background-color: @syntax-gutter-background-color-selected;
+				// background-color: @syntax-gutter-background-color-selected;
 				color: @syntax-gutter-text-color-selected;
 			}
 
@@ -70,11 +70,11 @@ atom-text-editor .search-results .marker.current-result .region,
 	color: @purple;
 
 	&.control {
-		color: @purple;
+		color: @orange;
 	}
 
 	&.operator {
-		color: @syntax-text-color;
+		color: @red;
 	}
 
 	&.other.special-method {
@@ -82,27 +82,27 @@ atom-text-editor .search-results .marker.current-result .region,
 	}
 
 	&.other.unit {
-		color: @orange;
+		color: @red;
 	}
 }
 
 .storage {
-	color: @purple;
+	color: @red;
 }
 
 .constant {
-	color: @orange;
+	color: @purple;
 
 	&.character.escape {
-		color: @cyan;
+		color: @aqua;
 	}
 
 	&.numeric {
-		color: @orange;
+		color: @purple;
 	}
 
 	&.other.color {
-		color: @cyan;
+		color: @aqua;
 	}
 
 	&.other.symbol {
@@ -111,28 +111,30 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .variable {
-	color: @red;
+	color: @white;
 
 	&.interpolation {
-		color: darken(@red, 10%);
+		color: darken(@white, 10%);
 	}
 
 	&.parameter.function {
 		color: @syntax-text-color;
 	}
+	&.language {
+		color: @red;
+	}
 }
 
 .invalid.illegal {
-	background-color: @red;
+	background-color: @white;
 	color: @syntax-background-color;
 }
 
 .string {
-	color: @green;
-
+	color: @light-orange;
 
 	&.regexp {
-		color: @cyan;
+		color: @aqua;
 
 		.source.ruby.embedded {
 			color: @orange;
@@ -140,7 +142,7 @@ atom-text-editor .search-results .marker.current-result .region,
 	}
 
 	&.other.link {
-		color: @red;
+		color: @white;
 	}
 }
 
@@ -174,7 +176,7 @@ atom-text-editor .search-results .marker.current-result .region,
 	}
 
 	&.section.embedded {
-		color: darken(@red, 10%);
+		color: darken(@white, 10%);
 	}
 
 }
@@ -185,7 +187,7 @@ atom-text-editor .search-results .marker.current-result .region,
 	}
 
 	&.function  {
-		color: @cyan;
+		color: @aqua;
 
 		&.any-method {
 			color: @blue;
@@ -195,10 +197,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .entity {
 	&.name.function {
-		color: @blue;
+		color: @green;
 	}
 	&.name.type {
-		color: @light-orange;
+		color: @blue;
 		text-decoration: underline;
 	}
 
@@ -214,7 +216,7 @@ atom-text-editor .search-results .marker.current-result .region,
 	}
 
 	&.name.tag {
-		color: @red;
+		color: @white;
 		text-decoration: underline;
 	}
 
@@ -229,7 +231,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .meta {
 	&.class {
-		color: @light-orange;
+		color: @pink;
 	}
 
 	&.link {
@@ -265,7 +267,7 @@ atom-text-editor .search-results .marker.current-result .region,
 	}
 
 	&.deleted {
-		color: @red;
+		color: @white;
 	}
 
 	&.italic {
@@ -282,7 +284,7 @@ atom-text-editor .search-results .marker.current-result .region,
 	}
 
 	&.list {
-		color: @red;
+		color: @white;
 	}
 
 	&.quote {
@@ -305,3 +307,24 @@ atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
 	padding-left: 1px;
 }
+
+::-webkit-scrollbar {
+    width: .5em;
+    height: .5em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(20,20,20);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(28,28,28);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgb(28,28,28);
+}
+
+::-webkit-scrollbar-corner {
+	 background: rgb(20,20,20);
+ }
