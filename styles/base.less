@@ -1,5 +1,9 @@
 @import "syntax-variables";
 
+.line.highlight-line {
+	background: rgba(50,50,50,.3) !important;
+}
+
 atom-text-editor, :host {
 	background-color: @syntax-background-color;
 	color: @syntax-text-color;
@@ -22,7 +26,7 @@ atom-text-editor, :host {
 
 		.line-number {
 			&.cursor-line {
-				// background-color: @syntax-gutter-background-color-selected;
+				background-color: @syntax-gutter-background-color-selected;
 				color: @syntax-gutter-text-color-selected;
 			}
 
@@ -314,17 +318,17 @@ atom-text-editor[mini] .scroll-view,
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(20,20,20);
+    background-color: rgb(28,28,28);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(28,28,28);
+    background: rgb(33,33,33);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgb(28,28,28);
+    background: rgb(33,33,33);
 }
 
 ::-webkit-scrollbar-corner {
-	 background: rgb(20,20,20);
+	 background: rgb(28,28,28);
  }
