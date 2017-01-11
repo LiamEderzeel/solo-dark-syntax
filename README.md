@@ -1,4 +1,4 @@
-[Solo Logo](http://liamederzeel.com/media/solo.png)
+![](http://liamederzeel.com/media/solo.png)
 
 # solo-dark-syntax theme
 
