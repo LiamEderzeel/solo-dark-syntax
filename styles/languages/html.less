@@ -1,40 +1,40 @@
 @import "colors";
 
-.html {
+.syntax--html {
 
-	.meta.tag.any {
-		color: @pink;
+	.syntax--meta.syntax--tag.syntax--any {
+		color: @light-gray;
 	}
 
-	.entity.name.tag {
-		&.block, &.inline, &.name {
+	.syntax--entity.syntax--name.syntax--tag {
+		&.syntax--block, &.syntax--inline, &.syntax--name {
 			color: @red;
 			text-decoration: none;
 		}
 	}
 
-	.entity.other.attribute-name.html {
+	.syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
 		color: @blue;
 	}
 
 
-	.entity.other.attribute-name.id.html {
+	.syntax--entity.syntax--other.syntax--attribute-name.syntax--id.syntax--html {
 		color: @light-orange;
 	}
 
-	.punctuation.separator.key-value {
+	.syntax--punctuation.syntax--separator.syntax--key-value {
 		color: @orange;
 	}
 
-	.string.quoted.double {
+	.syntax--string.syntax--quoted.syntax--double {
 		color: @cyan;
 
-		.punctuation.definition.string {
-			&.begin, &.end {
+		.syntax--punctuation.syntax--definition.syntax--string {
+			&.syntax--begin, &.syntax--end {
 				color: @purple;
 			}
 
-			.separator.key-value.html {
+			.syntax--separator.syntax--key-value.syntax--html {
 				color: @pink;
 			}
 		}
